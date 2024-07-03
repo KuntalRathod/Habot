@@ -11,7 +11,7 @@ const VideoBuyer = ({ className = "" }) => {
     >
       <style>
         {`
-          @media (max-width: 460px) {
+          @media (max-width: 431px) {
             .video-buyer {
               padding-right: 20px;
               padding-left: 10px;
@@ -24,7 +24,7 @@ const VideoBuyer = ({ className = "" }) => {
               font-size: 0.875rem; /* Adjust font size for smaller details */
             }
           }
-          @media (max-width: 428px) and (min-height: 778px) {
+          @media (max-width: 431px) and (min-height: 778px) {
             .video-buyer {
               font-size: 0.875rem; /* Adjust font size for smaller details */
             }
