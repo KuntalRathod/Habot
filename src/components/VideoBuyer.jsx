@@ -9,6 +9,16 @@ const VideoBuyer = ({ className = "" }) => {
     <div
       className={`self-stretch rounded-8xs bg-darkslateblue overflow-hidden flex flex-col lg:flex-row items-start lg:items-start justify-start pt-[137px] pb-[136px] lg:pb-[136px] pr-[50px] pl-[72px] box-border gap-[65px] max-w-full text-left text-7xl text-coral font-poppins ${className} video-buyer`}
     >
+      <style>
+        {`
+          @media (max-width: 460px) {
+            .video-buyer {
+              padding-right: 20px;
+              padding-left: 10px;
+            }
+          }
+        `}
+      </style>
       <div className="flex-1 flex flex-col lg:flex-row items-start justify-start relative min-w-[416px] lg:max-w-full">
         <img
           className="h-[350px] flex-1 relative rounded-8xs max-w-full overflow-hidden object-cover"

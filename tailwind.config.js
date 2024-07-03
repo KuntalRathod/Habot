@@ -75,6 +75,7 @@ module.exports = {
       "2xl": "1536px",
       mq1000: { max: "999px" }, // Custom media query for screens below 1000px
       mq600: { max: "600px" }, // Custom media query for screens below 600px
+      "460px": "460px", // Custom breakpoint for 460px
     },
   },
   corePlugins: {
