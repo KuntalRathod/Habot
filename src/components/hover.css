@@ -1,0 +1,23 @@
+.location-box {
+  position: relative;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  padding-right: 2.5rem; /* Ensure space for the icon */
+}
+
+.location-box:hover {
+  background-color: #eb7150; /* coral */
+  color: white;
+}
+
+.location-icon {
+  position: absolute;
+  right: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.location-box:hover .location-icon {
+  opacity: 1;
+}

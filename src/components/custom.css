@@ -1,0 +1,4 @@
+/* custom.css */
+.items-end {
+  align-items: initial !important; /* Adding !important to ensure it overrides */
+}

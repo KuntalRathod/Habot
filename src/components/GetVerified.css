@@ -1,0 +1,6 @@
+@media (max-width: 570px) and (max-height: 778px) {
+  .responsive-text {
+    font-size: 24px; /* Adjust the size as needed */
+    text-align: center;
+  }
+}
