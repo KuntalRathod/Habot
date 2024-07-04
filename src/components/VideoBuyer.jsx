@@ -24,7 +24,7 @@ const VideoBuyer = ({ className = "" }) => {
               font-size: 0.875rem; /* Adjust font size for smaller details */
             }
           }
-          @media (max-width: 436px) and (min-height: 778px) {
+          @media (max-width: 434px) and (min-height: 778px) {
             .video-buyer {
               font-size: 0.875rem; /* Adjust font size for smaller details */
             }
