@@ -87,7 +87,6 @@ const VideoBuyer = ({ className = "" }) => {
                   <p className="m-0 buyer-supplier-details">
                     Select service tags for relevant opportunities.
                   </p>
-
                   <p className="m-0 buyer-supplier-details">
                     Reach out to buyers and expand your
                   </p>

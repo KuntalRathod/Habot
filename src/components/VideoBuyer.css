@@ -1,20 +1,25 @@
 .video-buyer {
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
+  background-color: #2d3b55;
+  overflow: hidden;
+  gap: 65px;
+  max-width: 100%;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 471px) {
   .video-buyer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     gap: 20px;
   }
 
-  .video-buyer img {
+  .video-buyer img.youtube-post {
     width: 100%;
     height: auto;
+    border-radius: 8px;
   }
 
   .video-buyer h2 {
@@ -43,16 +48,14 @@
 
 @media (min-width: 472px) and (max-width: 778px) {
   .video-buyer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px;
     gap: 30px;
   }
 
-  .video-buyer img {
+  .video-buyer img.youtube-post {
     width: 100%;
     height: auto;
+    border-radius: 8px;
   }
 
   .video-buyer h2 {
@@ -81,21 +84,22 @@
 
 @media (max-width: 443px) {
   .video-buyer {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px;
+    gap: 15px;
   }
 
-  .youtube-post {
+  .video-buyer img.youtube-post {
     width: 100%;
     height: auto;
+    border-radius: 8px;
   }
 
-  .buyer-supplier-details,
-  .buyer-supplier-heading {
-    font-size: 0.75rem; /* Further reduce font size for smaller details */
+  .video-buyer .buyer-supplier-details,
+  .video-buyer .buyer-supplier-heading {
+    font-size: 0.75rem;
   }
 
-  .vector-image {
+  .video-buyer .vector-image {
     max-width: 100%;
     height: auto;
   }
