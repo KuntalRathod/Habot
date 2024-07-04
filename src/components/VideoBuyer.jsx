@@ -29,6 +29,12 @@ const VideoBuyer = ({ className = "" }) => {
               height: auto;
             }
           }
+            /* New media query for max-width 417px */
+           @media (max-width: 417px) {
+  .buyer-supplier-heading {
+    font-size: 1.25rem; /* Adjust the font size for smaller screens */
+  }
+}
         `}
       </style>
       <div className="flex-1 flex flex-col lg:flex-row items-start justify-start relative min-w-[416px] lg:max-w-full">
