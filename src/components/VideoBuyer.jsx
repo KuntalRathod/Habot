@@ -16,7 +16,7 @@ const VideoBuyer = ({ className = "" }) => {
           src="/youtube-post.png"
         />
         <div className="h-[75.2px] w-[106.3px] absolute !m-[0] top-[137px] right-[266.7px] z-[1] lg:top-[137px] lg:right-[266.7px]">
-          <div className="absolute top-[17.5px] left-[19.1px] rounded-8xs bg-white w-[53.7px] h-[40.1px]" />
+          {/* <div className="absolute top-[17.5px] left-[19.1px] rounded-8xs bg-white w-[53.7px] h-[40.1px]" /> */}
           <img
             className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full z-[1] vector-image"
             loading="lazy"
@@ -29,9 +29,13 @@ const VideoBuyer = ({ className = "" }) => {
         <div className="self-stretch flex flex-col items-start justify-start gap-[40px] max-w-full">
           <div className="w-402px flex flex-row items-start justify-between max-w-full gap-[20px] lg:flex-row">
             <div className="w-[202px] flex flex-col items-start justify-start gap-[11px]">
-              <div className="flex flex-row items-start justify-start py-0 pr-[63px] pl-[60px]">
+              <div className="flex flex-row items-start justify-start py-0 pr-[10px] pl-[10px]">
                 <h2
-                  className={`m-0 relative text-inherit leading-[32px] font-bold font-inherit inline-block min-w-[79px] cursor-pointer ${!isSupplier ? "text-coral buyer-supplier-heading" : "text-white buyer-supplier-heading"}`}
+                  className={`m-0 relative text-inherit leading-[32px] font-bold font-inherit inline-block min-w-[79px] cursor-pointer ${
+                    !isSupplier
+                      ? "text-coral buyer-supplier-heading"
+                      : "text-white buyer-supplier-heading"
+                  }`}
                   onClick={() => setIsSupplier(false)}
                 >
                   Buyer
@@ -44,7 +48,11 @@ const VideoBuyer = ({ className = "" }) => {
             <div className="w-[202px] flex flex-col items-start justify-start gap-[11px] lg:ml-auto">
               <div className="flex flex-row items-start justify-start py-0 pr-[45px] pl-[47px]">
                 <h2
-                  className={`m-0 relative text-inherit leading-[32px] font-bold font-inherit inline-block min-w-[112px] cursor-pointer ${isSupplier ? "text-coral buyer-supplier-heading" : "text-white buyer-supplier-heading"}`}
+                  className={`m-0 relative text-inherit leading-[32px] font-bold font-inherit inline-block min-w-[112px] cursor-pointer ${
+                    isSupplier
+                      ? "text-coral buyer-supplier-heading"
+                      : "text-white buyer-supplier-heading"
+                  }`}
                   onClick={() => setIsSupplier(true)}
                 >
                   Supplier
@@ -70,6 +78,7 @@ const VideoBuyer = ({ className = "" }) => {
                   alt=""
                   src="/checked-2-1.svg"
                 />
+                <br />
                 <img
                   className="w-[18px] h-[18px] relative overflow-hidden shrink-0"
                   loading="lazy"
@@ -85,8 +94,10 @@ const VideoBuyer = ({ className = "" }) => {
                     Complete your profile and get verified.
                   </p>
                   <p className="m-0 buyer-supplier-details">
-                    Select service tags for relevant opportunities.
+                    Select service tags for relevant
                   </p>
+                  <p className="m-0 buyer-supplier-details">opportunities.</p>
+
                   <p className="m-0 buyer-supplier-details">
                     Reach out to buyers and expand your
                   </p>
@@ -98,13 +109,15 @@ const VideoBuyer = ({ className = "" }) => {
                     Post your requirements.
                   </p>
                   <p className="m-0 buyer-supplier-details">
-                    Sit back for multiple suppliers to contact you.
+                    Sit back for multiple suppliers to contact
                   </p>
+                  <p className="m-0 buyer-supplier-details">you.</p>
+
                   <p className="m-0 buyer-supplier-details">
                     Choose among the suppliers based
                   </p>
                   <p className="m-0 buyer-supplier-details">
-                    on the ratings and reviews.
+                    on your criteria.
                   </p>
                 </>
               )}

@@ -99,8 +99,34 @@
     font-size: 0.75rem;
   }
 
-  .video-buyer .vector-image {
+  .video-buyer {
     max-width: 100%;
     height: auto;
+    
   }
+}
+
+/* New media query for YouTube post specific sizes */
+@media (min-width: 300px) and (max-width: 778px) {
+  .video-buyer img.youtube-post {
+    max-width: 280px;
+    max-height: 227.5px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+}
+
+/* Custom media query for vector image specific sizes */
+@media (min-width: 300px) and (max-width: 778px) {
+  .video-buyer .vector-image {
+    max-width: 40px;
+    height: auto;
+  }
+}
+
+/* Add underline class for dynamic resizing */
+.underline {
+  width: 100%; /* Default width */
 }
