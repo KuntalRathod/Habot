@@ -91,7 +91,7 @@ const VideoBuyer = ({ className = "" }) => {
                   <p className="m-0 buyer-supplier-details">
                     Reach out to buyers and expand your
                   </p>
-                  <p className="m-0">business.</p>
+                  <p className="m-0 buyer-supplier-details">business.</p>
                 </>
               ) : (
                 <>
@@ -104,7 +104,9 @@ const VideoBuyer = ({ className = "" }) => {
                   <p className="m-0 buyer-supplier-details">
                     Choose among the suppliers based
                   </p>
-                  <p className="m-0">on the ratings and reviews.</p>
+                  <p className="m-0 buyer-supplier-details">
+                    on the ratings and reviews.
+                  </p>
                 </>
               )}
             </div>
