@@ -118,11 +118,12 @@
   }
 }
 
-/* Custom media query for vector image specific sizes */
-@media (min-width: 300px) and (max-width: 778px) {
+/* Custom media query for vector image specific sizes between 356px and 778px */
+@media (min-width: 345px) and (max-width: 778px) {
   .video-buyer .vector-image {
-    max-width: 40px;
+    position: relative;
+    top: -66px; /* Adjust this value to move the vector image upwards */
+    max-width: 50px;
     height: auto;
   }
 }
-
