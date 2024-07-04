@@ -11,42 +11,29 @@ const VideoBuyer = ({ className = "" }) => {
     >
       <style>
         {`
-          @media (max-width: 460px) {
+          @media (max-width: 417px) and (min-height: 778px) {
             .video-buyer {
               padding-right: 20px;
               padding-left: 10px;
             }
-            .youtube-logo {
-              max-width: 100%;
+            .youtube-post {
+              max-width: 80%;
               height: auto;
             }
-            .buyer-supplier-details {
-              font-size: 0.875rem; /* Adjust font size for smaller details */
-            }
-          }
-          @media (max-width: 453px) and (min-height: 778px) {
-            .video-buyer {
-              font-size: 0.875rem; /* Adjust font size for smaller details */
-            }
-            .youtube-logo {
-              max-width: 300px; /* Adjust the size of YouTube logo */
+            .buyer-supplier-details,
+            .buyer-supplier-heading {
+              font-size: 0.75rem; /* Further reduce font size for smaller details */
             }
             .vector-image {
               max-width: 80%; /* Adjust the size of vector image */
               height: auto;
-            }
-            .buyer-supplier-details {
-              font-size: 0.875rem; /* Adjust font size for smaller details */
-            }
-            .buyer-supplier-heading {
-              font-size: 1.25rem; /* Adjust font size for Buyer and Supplier headings */
             }
           }
         `}
       </style>
       <div className="flex-1 flex flex-col lg:flex-row items-start justify-start relative min-w-[416px] lg:max-w-full">
         <img
-          className="h-[350px] flex-1 relative rounded-8xs max-w-full overflow-hidden object-cover youtube-logo"
+          className="h-[350px] flex-1 relative rounded-8xs max-w-full overflow-hidden object-cover youtube-post"
           alt=""
           src="/youtube-post.png"
         />
@@ -122,9 +109,11 @@ const VideoBuyer = ({ className = "" }) => {
                   <p className="m-0 buyer-supplier-details">
                     Select service tags for relevant opportunities.
                   </p>
+
                   <p className="m-0 buyer-supplier-details">
-                    Reach out to buyers and expand your business.
+                    Reach out to buyers and expand your
                   </p>
+                  <p className="m-0">business.</p>
                 </>
               ) : (
                 <>
@@ -135,8 +124,9 @@ const VideoBuyer = ({ className = "" }) => {
                     Sit back for multiple suppliers to contact you.
                   </p>
                   <p className="m-0 buyer-supplier-details">
-                    Choose among the suppliers based on the ratings and reviews.
+                    Choose among the suppliers based
                   </p>
+                  <p className="m-0">on the ratings and reviews.</p>
                 </>
               )}
             </div>
