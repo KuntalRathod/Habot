@@ -11,7 +11,7 @@ const VideoBuyer = ({ className = "" }) => {
     >
       <style>
         {`
-          @media (max-width: 417px) and (min-height: 778px) {
+          @media (max-width: 444px) and (min-height: 778px) {
             .video-buyer {
               padding-right: 20px;
               padding-left: 10px;
