@@ -47,7 +47,7 @@ const SearchContent = ({ className = "" }) => {
               </div>
             </div>
             <div className="w-[117.9px] flex flex-col items-start justify-start pt-px px-0 pb-0 box-border mq1000:w-full">
-              <button className="cursor-pointer pt-[17px] pb-[9px] pr-[31px] pl-[33px] bg-darkgreen self-stretch rounded-8xs overflow-hidden flex flex-row items-start justify-start z-[1] border-[1px] border-solid border-darkgreen hover:bg-mediumseagreen-100 hover:box-border hover:border-[1px] hover:border-solid hover:border-mediumseagreen-100">
+              <button className="cursor-pointer pt-[14px] pb-[13px] pr-[31px] pl-[33px] bg-darkgreen self-stretch rounded-8xs overflow-hidden flex flex-row items-start justify-start z-[1] border-[1px] border-solid border-darkgreen hover:bg-mediumseagreen-100 hover:box-border hover:border-[1px] hover:border-solid hover:border-mediumseagreen-100">
                 <b className="flex-1 relative text-base-1 leading-[24px] inline-block font-inter text-white text-center min-w-[52.1px]">
                   Search
                 </b>
