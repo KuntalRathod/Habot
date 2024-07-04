@@ -7,39 +7,11 @@ const VideoBuyer = ({ className = "" }) => {
 
   return (
     <div
-      className={`self-stretch rounded-8xs bg-darkslateblue overflow-hidden flex flex-col lg:flex-row items-start lg:items-start justify-start pt-[137px] pb-[136px] lg:pb-[136px] pr-[50px] pl-[72px] box-border gap-[65px] max-w-full text-left text-7xl text-coral font-poppins ${className} video-buyer`}
+      className={`self-stretch rounded-8xs bg-darkslateblue overflow-hidden flex flex-col lg:flex-row items-start lg:items-start justify-start pt-[137px] pb-[136px] lg:pb-[136px] pr-[20px] pl-[10px] box-border gap-[65px] max-w-full text-left text-7xl text-coral font-poppins ${className} video-buyer`}
     >
-      <style>
-        {`
-          @media (max-width: 555px) and (min-height: 778px) {
-            .video-buyer {
-              padding-right: 20px;
-              padding-left: 10px;
-            }
-            .youtube-post {
-              max-width: 80%;
-              height: auto;
-            }
-            .buyer-supplier-details,
-            .buyer-supplier-heading {
-              font-size: 0.75rem; /* Further reduce font size for smaller details */
-            }
-            .vector-image {
-              max-width: 80%; /* Adjust the size of vector image */
-              height: auto;
-            }
-          }
-            /* New media query for max-width 417px */
-           @media (max-width: 417px) {
-  .buyer-supplier-heading {
-    font-size: 1.25rem; /* Adjust the font size for smaller screens */
-  }
-}
-        `}
-      </style>
       <div className="flex-1 flex flex-col lg:flex-row items-start justify-start relative min-w-[416px] lg:max-w-full">
         <img
-          className="h-[350px] flex-1 relative rounded-8xs max-w-full overflow-hidden object-cover youtube-post"
+          className="h-[350px] w-full lg:w-auto relative rounded-8xs max-w-full lg:max-w-none overflow-hidden object-cover youtube-post"
           alt=""
           src="/youtube-post.png"
         />

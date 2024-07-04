@@ -13,8 +13,8 @@
   }
 
   .video-buyer img {
-    height: auto;
     width: 100%;
+    height: auto;
   }
 
   .video-buyer h2 {
@@ -51,8 +51,8 @@
   }
 
   .video-buyer img {
-    height: auto;
     width: 100%;
+    height: auto;
   }
 
   .video-buyer h2 {
@@ -76,5 +76,27 @@
 
   .video-buyer .self-stretch {
     width: 100%;
+  }
+}
+
+@media (max-width: 443px) {
+  .video-buyer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .youtube-post {
+    width: 100%;
+    height: auto;
+  }
+
+  .buyer-supplier-details,
+  .buyer-supplier-heading {
+    font-size: 0.75rem; /* Further reduce font size for smaller details */
+  }
+
+  .vector-image {
+    max-width: 100%;
+    height: auto;
   }
 }
